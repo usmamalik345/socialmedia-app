@@ -2,6 +2,7 @@ import React from 'react'
 import "./Rightbar.css"
 import Online from "../Online/Online"
 import {Users} from "../../Dummydata"
+import Home from '../../Pages/Home/Home'
 
 const Rightbar = ({profile}) => {
 
@@ -83,7 +84,7 @@ const Rightbar = ({profile}) => {
     <div className='Rightbar'>
       <div className="rightWrapper">
         
-        < Rightprofilebar />
+        {profile ? <Rightprofilebar /> : <HomeRightbar/> }
       </div>
 
     </div>
